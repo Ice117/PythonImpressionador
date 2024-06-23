@@ -1,0 +1,397 @@
+/* GLOBAL */
+:root {
+  --primary-color: #10151b;
+  --light-primary: #181e25;
+  --lighthest-color: #2b323c;
+  --secondary-color: #005982;
+  --light-secondary: #00b1d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--light-primary);
+  color: #fff;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: var(--light-secondary);
+}
+
+.container {
+  max-width: 1000px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* SECTION 1 */
+.container_jornada {
+  display: flex;
+  gap: 2rem;
+  margin-top: 50px;
+  margin-bottom: 7rem;
+}
+
+.jornada_python {
+  display: flex;
+  flex-flow: column;
+  max-width: 500px;
+}
+
+.div_logo_hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 3.2rem;
+  width: 4.5rem;
+  border-radius: 6px;
+
+  & img {
+    width: 3rem;
+  }
+}
+
+.h1_jornada_python {
+  font-size: 39.8px;
+  font-weight: 700;
+}
+
+.sub_titulo_h1 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.jornada_paragrafo {
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.jornada_mini_textos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13.3px;
+    font-weight: 500;
+    gap: 1rem;
+
+    & img {
+      height: max-content;
+    }
+  }
+}
+
+.botao_ingresso {
+  background: #00a8dd;
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  border: none;
+  border-right: solid 5px #004e69;
+  border-bottom: solid 5px #004e69;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 4px 3px 8px -2px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    border-right: solid 5px #00a8dd;
+    border-bottom: solid 5px #00a8dd;
+    cursor: pointer;
+  }
+}
+
+/*    */
+
+.aulas {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  & .aulas_python {
+    background-color: var(--lighthest-color);
+    box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+
+  & h1 {
+    font-size: 23px;
+    margin-top: 0.5rem;
+  }
+
+  & h2 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  & ul {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    font-size: 13.3px;
+
+    & img {
+      width: 15px;
+    }
+
+    & li {
+      display: flex;
+      align-items: start;
+      gap: 0.65rem;
+    }
+  }
+}
+
+/* SECTION 2 */
+.section_LGPD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+
+  & p {
+    padding: 3rem 7rem 3rem 7rem;
+    font-size: 13.3px;
+    color: #a5a5a5;
+    text-align: center;
+  }
+}
+
+/* SECTION 3 */
+
+.container_aulas {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.h1_gratis {
+  max-width: 700px;
+  margin-bottom: 3rem;
+
+  & h1 {
+    font-size: 39.8px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6rem;
+  }
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: var(--lighthest-color);
+  box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  gap: 0.5rem;
+  border-radius: 15px;
+  margin-bottom: 8rem;
+
+  & div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+    & h2 {
+      font-size: 19.2px;
+      font-weight: 500;
+    }
+
+    & p {
+      margin: 1rem;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.container_lira {
+  display: flex;
+  gap: 5rem;
+}
+
+.div_lira {
+  background-color: var(--lighthest-color);
+  box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  border-radius: 15px;
+  height: 550px;
+
+  & h2 {
+    font-weight: 500;
+    padding: 3rem;
+    font-size: 23px;
+  }
+
+  & .foto_lira {
+    background-color: var(--light-primary);
+    box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    padding: 1.6rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    & h2,
+    h3 {
+      font-weight: 400;
+      padding: 0;
+    }
+
+    & h3 {
+      font-size: 19.2px;
+    }
+  }
+
+  & p {
+    text-align: center;
+    padding: 2rem;
+    font-size: 19.2px;
+  }
+}
+
+/* */
+
+.primeiros_passos {
+  background-color: var(--lighthest-color);
+  box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+  text-align: start;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  & .titulo_passos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  & h2 {
+    font-size: 23px;
+    font-weight: 500;
+  }
+
+  & h3 {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 2rem 0 2rem 0;
+  }
+
+  & ul {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.garanta_vaga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 130, 1) 0%,
+    rgba(0, 177, 211, 1) 100%
+  );
+  box-shadow: 0 8px 15px 2px rgba(0, 0, 0, 0.2);
+  gap: 1rem;
+  padding: 2rem;
+
+  & h2 {
+    font-size: 23px;
+    font-weight: 600;
+  }
+}
+
+.botao_vaga {
+  background: var(--lighthest-color);
+  width: 100%;
+  height: min-content;
+  color: white;
+  font-size: 19.2px;
+  font-weight: 400;
+  border: none;
+  border-right: solid 5px #000;
+  border-bottom: solid 5px #000;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  text-wrap: nowrap;
+  box-shadow: 4px 3px 8px -2px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    border-right: solid 5px var(--lighthest-color);
+    border-bottom: solid 5px var(--lighthest-color);
+    cursor: pointer;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--lighthest-color);
+  box-shadow: 0 -5px 15px 2px rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+
+.container_rodape {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  gap: 1rem;
+  margin-right: 5rem;
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo-footer {
+  height: 4.5rem;
+}
