@@ -1,0 +1,35 @@
+@media all and (max-width: 1030px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container_jornada {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .aulas {
+    margin-top: 2rem;
+  }
+
+  .container_lira {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .div_dupla {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .primeiros_passos {
+    margin-top: 1rem;
+  }
+
+  .garanta_vaga {
+    max-width: 500px;
+  }
+}

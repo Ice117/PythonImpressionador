@@ -1,0 +1,19 @@
+@media all and (max-width: 710px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .passos{
+    display: flex;
+    flex-flow: column;
+    margin: 1rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  .container_rodape {
+    margin: 0;
+  }
+}

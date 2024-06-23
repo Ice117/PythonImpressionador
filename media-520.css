@@ -1,0 +1,50 @@
+@media all and (max-width: 520px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .jornada_python {
+    align-items: center;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .botao_ingresso {
+    width: 80%;
+  }
+
+  .aulas {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+  }
+
+  .h1_gratis {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    & h1 {
+      font-size: 23px;
+    }
+  }
+
+  .passos {
+    margin: 2rem;
+  }
+
+  .container_lira {
+    gap: 1rem;
+  }
+
+  .div_lira {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+
+  .primeiros_passos {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+
+  .garanta_vaga {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+}
